@@ -4,6 +4,9 @@ services:
   honeypot:
     build: ./honeypot
     restart: unless-stopped
+    ports:
+      - '0.0.0.0:21:21'
+      - '0.0.0.0:4242:22'
     cap_add:
       - NET_ADMIN
     depends_on:
@@ -31,6 +34,7 @@ services:
 
   grafana:
     build: ./grafana
+    restart: unless-stopped
     container_name: grafana
     command: ./import.sh
     ports:
