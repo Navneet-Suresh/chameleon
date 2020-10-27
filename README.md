@@ -29,7 +29,7 @@ Customizable honeypots for monitoring network traffic, bots activities and usern
 
 
 ## NOTE:
-#### On RaspberryPi 3B+ use [zram](https://github.com/Nefelim4ag/systemd-swap) to avoid system lockup during docker-compose builds or after reboots as system has low memory, Raspberry Pi4 with 2GB+ RAM should be fine.
+On **RaspberryPi** 3B+ use [zram](https://github.com/Nefelim4ag/systemd-swap) to avoid system lockup during docker-compose builds or after reboots as system has low memory, Raspberry Pi4 with 2GB+ RAM should be fine.
 
 ## Install and run
 #### On ubuntu 18 or 19 System (Auto-configure)
