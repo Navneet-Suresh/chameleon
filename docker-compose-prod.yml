@@ -4,9 +4,11 @@ services:
   honeypot:
     build: ./honeypot
     restart: unless-stopped
+    container_name: honeypot
     ports:
-      - '0.0.0.0:21:21'
-      - '0.0.0.0:4242:22'
+      - '21:21'
+      - '4242:22'
+      - '25:25'
     cap_add:
       - NET_ADMIN
     depends_on:
